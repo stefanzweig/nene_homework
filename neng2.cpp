@@ -13,7 +13,6 @@ int main()
     string scores;
     std::vector<string> tokens;
     cin >> M >> n;
-    cout << "Type your scores: ";
     cin.ignore();
     getline(cin, scores);
     istringstream iss(scores);
@@ -23,7 +22,5 @@ int main()
     sort(tokens.begin(), tokens.end(), greater_equal<string>());
 
     cout << tokens[n-1]<<endl;
-
- 
     return 0;
 }
